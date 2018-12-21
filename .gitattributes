@@ -1,1 +1,37 @@
 * text=auto !eol
+/.classpath -text svneol=unset#application/xml
+/.project -text svneol=unset#application/xml
+.settings/.jsdtscope -text svneol=unset#application/xml
+.settings/org.eclipse.jdt.core.prefs -text
+.settings/org.eclipse.m2e.core.prefs -text
+.settings/org.eclipse.wst.common.component -text svneol=unset#application/xml
+.settings/org.eclipse.wst.common.project.facet.core.xml -text svneol=unset#application/xml
+.settings/org.eclipse.wst.jsdt.ui.superType.container -text
+.settings/org.eclipse.wst.jsdt.ui.superType.name -text
+.settings/org.eclipse.wst.validation.prefs -text
+WebContent/META-INF/MANIFEST.MF -text
+WebContent/WEB-INF/web.xml -text svneol=unset#application/xml
+WebContent/footer.jsp -text
+WebContent/header.jsp -text
+WebContent/images/bullet-l1.gif -text svneol=unset#image/gif
+WebContent/images/leo.png -text svneol=unset#image/png
+WebContent/index.jsp -text
+WebContent/menu.jsp -text
+WebContent/resources/d3.v4.min.js -text
+WebContent/resources/style.css -text
+WebContent/taxonomy/node.jsp -text
+WebContent/taxonomy/node_submit.jsp -text
+WebContent/taxonomy/taxonomy.jsp -text
+WebContent/template/browse.jsp -text
+WebContent/template/browse_fragment.jsp -text
+WebContent/template/browse_pattern.jsp -text
+WebContent/template/browse_unbound.jsp -text
+WebContent/template/complete.jsp -text
+WebContent/template/defer.jsp -text
+WebContent/template/generate.jsp -text
+WebContent/template/submit.jsp -text
+WebContent/template/suppress.jsp -text
+WebContent/template/verify.jsp -text
+WebContent/visualization/syntaxTree.jsp -text
+non-packaged-resources/schema.sql -text
+/pom.xml -text
