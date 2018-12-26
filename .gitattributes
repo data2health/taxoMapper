@@ -16,10 +16,13 @@ WebContent/header.jsp -text
 WebContent/images/bullet-l1.gif -text svneol=unset#image/gif
 WebContent/images/leo.png -text svneol=unset#image/png
 WebContent/index.jsp -text
+WebContent/mapping/addMapping.jsp -text
+WebContent/mapping/mappingList.jsp -text
 WebContent/menu.jsp -text
 WebContent/resources/d3.v4.min.js -text
 WebContent/resources/style.css -text
 WebContent/taxonomy/node.jsp -text
+WebContent/taxonomy/node_delete.jsp -text
 WebContent/taxonomy/node_submit.jsp -text
 WebContent/taxonomy/taxonomy.jsp -text
 WebContent/template/browse.jsp -text
