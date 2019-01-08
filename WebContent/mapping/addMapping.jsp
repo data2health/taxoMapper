@@ -77,14 +77,26 @@
        </c:forEach>
        </ol>
     </c:when>
-    <c:when test="${not empty param.database and not empty param.schema and not empty param.table and not empty param.attribute}">
+    <c:when test="${not empty param.database and not empty param.schema and not empty param.table and not empty param.attribute and empty param.value}">
         <sql:query var="values" dataSource="jdbc/taxoMapper">
             select ${param.attribute} as attribute,count(*) from ${param.schema}.${param.table} group by 1 order by 2 desc;
         </sql:query>
         <table>
         <tr><th>${param.attribute}</th><th>Count</th></tr>
         <c:forEach items="${values.rows}" var="row">
-            <tr><td>${row.attribute}</td><td>${row.count}</td></tr>
+            <tr><td><a href="addMapping.jsp?database=${param.database}&schema=${param.schema}&table=${param.table}&attribute=${param.attribute}&value=${row.attribute}">${row.attribute}</a></td><td>${row.count}</td></tr>
+       </c:forEach>
+        </table>
+    </c:when>
+    <c:when test="${not empty param.database and not empty param.schema and not empty param.table and not empty param.attribute and not empty param.value}">
+        <sql:query var="values" dataSource="jdbc/taxoMapper">
+            select value,count(*) from ${param.schema}.${param.table} where ${param.attribute} = ? group by 1 order by 2 desc;
+            <sql:param>${param.value}</sql:param>
+        </sql:query>
+        <table>
+        <tr><th>${param.value}</th><th>Count</th></tr>
+        <c:forEach items="${values.rows}" var="row">
+            <tr><td>${row.value}</td><td>${row.count}</td></tr>
        </c:forEach>
         </table>
     </c:when>
