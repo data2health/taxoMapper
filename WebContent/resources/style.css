@@ -78,6 +78,25 @@ body {
 	padding: 0px 10px 0px 0px;
 }
 
+#contentBlock {
+    width: 100%;
+    float: left;
+    padding: 0px 10px 0px 0px;
+}
+
+#contentBlock2 {
+    height: 100%;
+    width: 45%;
+    float: left;
+    padding: 0px 10px 0px 0px;
+}
+
+#contentBlock3 {
+    width: 30%;
+    float: left;
+    padding: 0px 10px 0px 0px;
+}
+
 
 
 /* NAVIGATION STYLES */

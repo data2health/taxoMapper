@@ -14,11 +14,11 @@
 </head>
 <body>
     <div id="content"><jsp:include page="/header.jsp" flush="true" />
-        <jsp:include page="/menu.jsp" flush="true"><jsp:param
+        <jsp:include page="/menu.jsp" flush="false"><jsp:param
                 name="caller" value="research" /></jsp:include><div id="centerCol">
             <h3>Add a Mapping</h3>
 
-                                <form action="addMapping.jsp" method="post">
+                                <form action="bindEntity.jsp" method="post">
                             <fieldset>
                                 <legend>Select Entity Source</legend>
                                 <label for="database">Database:</label> <input type="text" name="database" size="20" value="${param.database}"><br />
