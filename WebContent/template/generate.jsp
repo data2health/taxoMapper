@@ -46,7 +46,7 @@
 			| <a href="defer.jsp?fragment=${param.fragment}&tgrep=${param.pattern}">Defer</a>
             | <a href="complete.jsp?fragment=${param.fragment}&tgrep=${param.pattern}">Completed</a>
 			| <button type="submit" name="action" value="submit">Submit</button>
-			| <button type="submit" name="action" value="return">Submit&Return</button>
+			| <button type="submit" name="action" value="return">Submit&amp;Return</button>
 			| tgrep: <input type="text" id="tgrep" name="tgrep" size="100" value="">
 			<input type="hidden" name="pattern" value="${param.pattern}">
             <input type="hidden" name="fragment" value="${param.fragment}">
